@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% block body%} 
+<div class="container-fluid my-4 px=0">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        {% load static %}
+        <img src="{% static 'crou8.png' %}" alt="" class="d-block w-100 mx-0 my-0">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Welcome To Orion Solutions</h5>
+          <p>ORION's mission is to give the finest quality service to our customers by utilising cutting-edge technology and innovative solutions.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        {% load static %}
+        <img src="{% static 'crou3.png' %}" alt="" class="d-block w-100 mx-0 my-0">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>You will find your perfect solutions here </h5>
+          <p>
+            Our team of engineers, designers, architects, domain specialists and consultants have delivered modern, innovative solutions for today's complex challenges. </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        {% load static %}
+        <img src="{% static 'crou4.png' %}" alt="" class="d-block w-100 mx-0 my-0">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Smart City Development Ideas</h5>
+          <p> Our team has a clear approach for developing a distinct value offer for clients by combining its abilities and market knowledge.</p>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div> 
+
+<div class="container my-3">
+<h2 class="my-4 text-center">Select from the following range of services</h2>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        {% load static %}
+        <img src="{% static 'crou10.png' %}" alt="" class="d-block w-100 mx-0 my-0">
+        <div class="card-body">
+          <p class="card-text">For Civil and Structure ideas</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a class="btn btn-sm" href="civ.html">View</a>
+              
+            </div>
+            <small class="text-muted"></small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        {% load static %}
+        <img src="{% static 'crou12.png' %}" alt="" class="d-block w-100 mx-0 my-0">
+        <div class="card-body">
+          <p class="card-text">For Geospatial Solutions</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a class="btn btn-sm" href="geo.html">View</a>
+              
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        {% load static %}
+        <img src="{% static 'crou11.png' %}" alt="" class="d-block w-100 mx-0 my-0">
+        <div class="card-body">
+          <p class="card-text">For Smart city solutions</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a class="btn btn-sm" href="sma.html">View</a>
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+</div>
+{% endblock body%}
+
+
+<!--https://source.unsplash.com/1200x400/?work-->
+<!--office-->
+<!--IT-->

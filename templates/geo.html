@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title%}Geospatial Solutions{% endblock title%} 
+
+{% block body%}
+<html>
+    <body>
+        <h1 type="Bold", align="middle"><u>Geospatial Solutions</u></h1>
+        {% load static %}
+        <center><img src="{% static 'geo.png' %}" alt="My image" height="350" width="500"></center>
+        <h1 type="Bold", align="middle"></h1>
+        <center><li style="color:Black; font: 34;"><b>Geo-Spatial Analytics</b></li>
+            <li><b>Spatial solutions to various business verticals</b></li>
+            <li><b>Drone based mapping of Asset</b></li>
+            <li><b>Drone / Aerial imagery based Object detection</b></li>
+            <li><b>Topographical Surveying and Mapping</b></li> 
+        </center>
+    </body>
+</html>
+{% endblock body%}

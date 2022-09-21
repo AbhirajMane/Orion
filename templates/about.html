@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+
+{% block title%}about{% endblock title%} 
+
+{% block body%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <center><h1><u>ORION</u></h1></center>
+    <style>
+        body{
+            margin:fluid;
+            font-family: sans-serif;
+        }
+        .section{
+            background-color: #252121;
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+            width: 100%;
+            margin: 10 rem auto 0 auto;
+        }
+        .section img{
+            height: 250px;
+            
+        }
+        .section h1{
+            margin: 0;
+            color: yellow;
+            margin-bottom: 3%;
+
+        }
+        .section p{
+            color: #c0c0c0;
+            margin-right: 15px;
+            font-size: x-large;
+        }
+    </style>
+  
+</head>
+<body>
+    <div class="section">
+        <div class="text">
+            <h1>Founder - Akshay.S.Babar</h1>
+            <p>
+                ORION Solutions & Consultants is mainly into providing innovative solutions for Civil infrastructure, Environment, Smart City Planning & Geospatial Sectors. ORION is much more than a firm that merely designs and constructs buildings. We provide a complete and integrated service to our clients. We combine experience across disciplines, regions, and sectors.
+            </p>
+        </div>
+        {% load static %}
+        <img src="{% static 'sonu.jpg' %}" alt="My image" height="350" width="500">
+    </div>
+    
+</body>
+<body>
+    <style>
+        body{
+            margin:fluid;
+            font-family: sans-serif;
+        }
+        .section{
+            background-color: #252121;
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+            width: 100%;
+            margin: 10 rem auto 0 auto;
+        }
+        .section img{
+            height: 250px;
+            
+        }
+        .section h1{
+            margin: 0;
+            color: yellow;
+            margin-bottom: 3%;
+
+        }
+        .section p{
+            color: #c0c0c0;
+            margin-left: 15px;
+            font-size: x-large;
+        }
+    </style>
+     <div class="section">
+        <div class="text">
+            <h1>Team</h1>
+            <p>
+                Our team of engineers, designers, architects, domain specialists and consultants have delivered modern, innovative solutions for today's complex challenges.   Our team has a clear approach for developing a distinct value offer for clients by combining its abilities and market knowledge.
+            </p>
+        </div>
+        {% load static %}
+        <img src="{% static 'team.jpg' %}" alt="My image" height="350" width="500">
+    </div>
+</style>
+<div class="section">
+   <div class="text">
+       <h1>Mission</h1>
+       <p>
+        ORION's mission is to be a competitive, innovative and customer focused company. We see our customers as partners and strive to establish long lasting relationships, by using cutting-edge technology and innovative solutions to deliver the highest possible standard of service.
+
+       </p>
+   </div>
+   {% load static %}
+   <img src="{% static 'misson.jpg' %}" alt="My image" height="350" width="500">
+</div>
+</body>
+</html>
+{% endblock body%}
