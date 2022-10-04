@@ -1,1 +1,0 @@
-web: gunicorn orionsolutions.wsgi --log-file -
